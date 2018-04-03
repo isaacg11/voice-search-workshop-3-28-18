@@ -20,7 +20,7 @@ response1.onresult = (event1) => {
                     setTimeout(() => {
                         window.location.href = `https://www.google.com/search?q=${event1.results[0][0].transcript}`
                     })
-                }, 1500)
+                }, 3000)
             } else {
                 const utterance3  = new SpeechSynthesisUtterance();
                 utterance3.text = `Okay, please try again`;
@@ -28,10 +28,10 @@ response1.onresult = (event1) => {
 
                 setTimeout(() => {
                     start()
-                }, 2000)
+                }, 3000)
             }
         }
-    }, 1500)
+    }, 3000)
 }
 
 function start() {
